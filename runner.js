@@ -1,5 +1,7 @@
 const Mocha = require('mocha');
 const path = require('path');
+const addContext = require('mochawesome/addContext');
+
 
 const mocha = new Mocha({
   timeout: 30000,
@@ -15,6 +17,7 @@ const mocha = new Mocha({
 });
 
 mocha.addFile(path.join(__dirname, 'test', 'apiTest.js'));
+addContext("Mochawesome report generated ...")
 
 mocha.run(failures => {
   process.exitCode = failures ? 1 : 0;

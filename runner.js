@@ -17,7 +17,6 @@ const mocha = new Mocha({
 });
 
 mocha.addFile(path.join(__dirname, 'test', 'apiTest.js'));
-addContext("Mochawesome report generated ...")
 
 mocha.run(failures => {
   process.exitCode = failures ? 1 : 0;

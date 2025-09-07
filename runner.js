@@ -1,8 +1,8 @@
 const Mocha = require('mocha');
 const path = require('path');
 
-// Instantiate a Mocha instance
 const mocha = new Mocha({
+  timeout: 30000,
   reporter: 'mochawesome',
   reporterOptions: {
     reportDir: 'mochawesome-report',
@@ -14,10 +14,8 @@ const mocha = new Mocha({
   }
 });
 
-// Add test file to Mocha
 mocha.addFile(path.join(__dirname, 'test', 'apiTest.js'));
 
-// Run the tests
 mocha.run(failures => {
   process.exitCode = failures ? 1 : 0;
 });

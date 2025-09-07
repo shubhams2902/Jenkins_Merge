@@ -1,0 +1,28 @@
+{
+  "name": "jenkins_merge",
+  "version": "1.0.0",
+  "description": "Practice_job",
+  "main": "runner.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhams2902/Jenkins_Merge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhams2902/Jenkins_Merge/issues"
+  },
+  "homepage": "https://github.com/shubhams2902/Jenkins_Merge#readme",
+  "devDependencies": {
+    "axios": "^1.11.0",
+    "mocha": "^11.7.2",
+    "mochawesome": "^7.1.3"
+  }
+}
